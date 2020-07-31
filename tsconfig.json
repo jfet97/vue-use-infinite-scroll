@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "module": "ESNext",
+        "lib": [
+            "ESNext",
+            "DOM"
+        ],
+        "target": "es2016",
+        "outDir": "dist",
+        "rootDir": "./src",
+        "moduleResolution": "node",
+        "strict": true,
+        "esModuleInterop": true
+    },
+    "exclude": [
+        "node_modules",
+        "**/node_modules/*",
+        "test"
+    ]
+}
