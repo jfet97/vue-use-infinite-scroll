@@ -44,5 +44,13 @@
     "hooks": {
       "pre-commit": "npm run types:check && npm run lint:fix && npm run format"
     }
+  },
+  "bugs": {
+    "url": "https://github.com/jfet97/vue-use-infinite-scroll/issues"
+  },
+  "homepage": "https://github.com/jfet97/vue-use-infinite-scroll#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jfet97/vue-use-infinite-scroll.git"
   }
 }
