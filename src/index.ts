@@ -1,7 +1,7 @@
 import { ref, Ref, onMounted, onUnmounted } from 'vue-demi'
 
 export type UseInfiniteScroll = (domElRef: Ref<HTMLElement>) => Ref<number>
-export type MakeUseInfiniteScroll = (options: IntersectionObserverInit) => UseInfiniteScroll
+export type MakeUseInfiniteScroll = (options?: IntersectionObserverInit) => UseInfiniteScroll
 
 export const makeUseInfiniteScroll: MakeUseInfiniteScroll = (options) => (domElRef) => {
     const pageRef = ref(1)
@@ -13,7 +13,7 @@ export const makeUseInfiniteScroll: MakeUseInfiniteScroll = (options) => (domElR
             if (domEl?.isIntersecting) {
                 pageRef.value++
             }
-        }, options)
+        }, options ?? {})
 
         observer.observe(domElRef.value)
     })

@@ -1,6 +1,6 @@
 {
   "name": "vue-use-infinite-scroll",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Vue composition function that makes infinite scroll a breeze",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
