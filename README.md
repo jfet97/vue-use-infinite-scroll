@@ -25,7 +25,7 @@ npm i -S vue-use-infinite-scroll
 ### script
 
 ```js
-import { ref, watch, watchEffect } from 'vue'
+import { ref, watch } from 'vue'
 import { makeUseInfiniteScroll } from 'vue-use-infinite-scroll'
 
 export default {
